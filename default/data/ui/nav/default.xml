@@ -1,0 +1,16 @@
+<nav search_view="search">
+  <view name="mail_summary" default="true" />
+  <a href="search?q=%60imap_search%60">Search</a>
+  <collection label="Reports">
+    <saved source="unclassified" />
+    <divider />
+      <view name="reports" />
+      <view name="alerts" />
+  </collection>
+  <collection label="Dashboards">
+     <view source="unclassified" />
+     <divider />
+       <view name="dashboards" />
+  </collection>
+  <view name="data_models" />
+</nav>

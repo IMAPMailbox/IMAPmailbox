@@ -1,0 +1,37 @@
+<setup>
+
+   <block title="Configure IMAP" endpoint="admin/conf-imap" entity="IMAP Configuration">
+		   <text>Mail Server Config Settings:</text>
+
+		   <input field="server">
+				   <label>IMAP Server Name/IP Address:</label>
+				   <type>text</type>
+		   </input>
+
+		   <input field="port">
+				   <label>IMAP Server TCP Port ##:</label>
+				   <type>text</type>
+		   </input>
+
+		   <input field="useSSL">
+				   <label>Use SSL for Server Connection.</label>
+				   <type>bool</type>
+		   </input>
+   
+		   <input field="user">
+				   <label>Mail Account - Username:</label>
+				   <type>text</type>
+		   </input>
+
+		   <input field="deleteWhenDone">
+				   <label>Delete Email after downloading. (recommended)</label>
+				   <type>bool</type>
+		   </input>
+  </block>
+
+  <block title="Next Steps">
+    <text>Make sure to edit local/imap.conf and add a password. It is recommended to use the encrypted xpassword setting. Read the READEME.md file for instructions.</text>
+    <text>Also look through default/imap.conf for extra settings and options. Adjust any changes to local/imap.conf and restart Splunk.</text>
+  </block>
+
+</setup>

@@ -1,0 +1,134 @@
+[]
+access = read : [ * ], write : [ admin, power ]
+export = none
+
+[tags]
+export = system
+
+[props]
+export = system
+
+[transforms]
+export = system
+
+[lookups]
+export = system
+
+[viewstates]
+access = read : [ * ], write : [ * ]
+export = system
+
+[app/ui]
+version = 6.0.1
+modtime = 1393630549.937647000
+
+[app/launcher]
+version = 6.0.1
+modtime = 1393630549.940260000
+
+[nav/default]
+version = 6.0.1
+modtime = 1393641834.275618000
+
+[views/mail_summary]
+access = read : [ * ]
+export = none
+owner = nobody
+version = 6.0.1
+modtime = 1395785238.668236000
+
+[views/top_message_data]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = nobody
+version = 6.0.1
+modtime = 1395772016.990039000
+
+[views/user_search]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = nobody
+version = 6.0.1
+modtime = 1393643982.486548000
+
+[datamodels/Email_Headers]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = nobody
+version = 6.0.1
+modtime = 1393891876.186549000
+
+[models/Email_Headers]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = nobody
+version = 6.0.1
+modtime = 1393891876.198047000
+
+[app/install/state]
+version = 6.0.1
+modtime = 1394176963.856280000
+
+[savedsearches/IMAP%20-%20Count%20of%20messages%20by%20hour]
+access = read : [ * ], write : [ admin, power ]
+export = none
+owner = nobody
+version = 6.0.1
+modtime = 1395766872.461492000
+
+[savedsearches/IMAP%20-%20Count%20of%20messages%20by%20month%2Fyear]
+access = read : [ * ], write : [ admin, power ]
+export = none
+owner = nobody
+version = 6.0.1
+modtime = 1395767775.780770000
+
+[savedsearches/IMAP%20-%20Cron%20Warnings]
+access = read : [ * ], write : [ admin, power ]
+export = none
+owner = nobody
+version = 6.0.1
+modtime = 1395768006.220105000
+
+[savedsearches/IMAP%20-%20get_imap_email.py%20errors]
+access = read : [ admin ], write : [ admin ]
+export = none
+owner = nobody
+version = 6.0.1
+modtime = 1395768108.195652000
+
+[savedsearches/IMAP%20-%20Messages%20with%20Delivery%20problems]
+access = read : [ * ], write : [ admin, power ]
+export = none
+owner = nobody
+version = 6.0.1
+modtime = 1395768303.338575000
+
+[savedsearches/IMAP%20-%20Top%20From%20Addresses]
+access = read : [ * ], write : [ admin, power ]
+export = none
+owner = nobody
+version = 6.0.1
+modtime = 1395768631.789833000
+
+[savedsearches/IMAP%20-%20Top%20To%20Addresses]
+access = read : [ * ], write : [ admin, power ]
+export = none
+owner = nobody
+version = 6.0.1
+modtime = 1395769136.378325000
+
+[savedsearches/IMAP%20-%20Top%20Subjects]
+access = read : [ * ], write : [ admin, power ]
+export = none
+owner = nobody
+version = 6.0.1
+modtime = 1395768714.341926000
+
+[savedsearches/IMAP%20-%20Count%20of%20messages%20this%20month]
+access = read : [ * ], write : [ admin, power ]
+export = none
+owner = nobody 
+version = 6.0.1
+modtime = 1395769073.873281000
+

@@ -1,0 +1,52 @@
+<form>
+  <label>Search Emails by From address</label>
+  
+  <!-- define master search template; leave time unbounded so that the time input can be used -->
+  <searchTemplate>`imap_search` From=$username$ $otherFilter$</searchTemplate>
+
+  <fieldset>
+      
+      <!-- create a text box; upon first load, the box will be populated with ''; 
+          if user leaves the box empty, then search will use 'johnvey'; all tokens
+          will be followed by a * -->
+      <input type="text" token="username">
+        <label>From</label>
+        <default>*</default>
+        <seed>*</seed>
+        <suffix>*</suffix>
+      </input>
+
+      <!-- always prepend the token 'otherFilter' with 'changetype='; if no value
+          is entered, then 'changetype=*' will be inserted -->
+      <input type="text" token="otherFilter">
+        <label>Other Keywords</label>
+        <default>*</default>
+      </input>
+      
+      <!-- add default TimePicker -->
+      <input type="time" />
+      
+  </fieldset>
+  <row>
+	<html>
+	  Results are below:.
+	</html> 
+  </row>
+  <row>
+  <event>
+	<title>Results</title>
+        <option name="showPager">true</option>
+	<option name="count">20</option>
+	<option name="segmentation">full</option>   
+  </event>
+  </row>
+  
+  <row>
+      <!-- show results as a table -->
+      <table>
+        <option name="showPager">true</option>
+        <option name="count">20</option>
+      </table>
+  </row>
+  
+</form>

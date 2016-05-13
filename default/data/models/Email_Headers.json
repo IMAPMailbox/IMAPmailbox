@@ -1,0 +1,76 @@
+{
+    "objectNameList": [
+        "Email_Headers"
+    ], 
+    "modelName": "Email_Headers", 
+    "objects": [
+        {
+            "fields": [
+                {
+                    "displayName": "Date", 
+                    "hidden": false, 
+                    "type": "string", 
+                    "comment": "", 
+                    "required": false, 
+                    "multivalue": false, 
+                    "fieldName": "Date"
+                }, 
+                {
+                    "displayName": "From", 
+                    "hidden": false, 
+                    "type": "string", 
+                    "comment": "", 
+                    "required": false, 
+                    "multivalue": false, 
+                    "fieldName": "From"
+                }, 
+                {
+                    "displayName": "mailbox", 
+                    "hidden": false, 
+                    "type": "string", 
+                    "comment": "", 
+                    "required": false, 
+                    "multivalue": false, 
+                    "fieldName": "mailbox"
+                }, 
+                {
+                    "displayName": "Subject", 
+                    "hidden": false, 
+                    "type": "string", 
+                    "comment": "", 
+                    "required": false, 
+                    "multivalue": false, 
+                    "fieldName": "Subject"
+                }, 
+                {
+                    "displayName": "To", 
+                    "hidden": false, 
+                    "type": "string", 
+                    "comment": "", 
+                    "required": false, 
+                    "multivalue": false, 
+                    "fieldName": "To"
+                }
+            ], 
+            "comment": "", 
+            "constraints": [
+                {
+                    "search": "`imap_index`"
+                }
+            ], 
+            "calculations": [], 
+            "parentName": "BaseEvent", 
+            "displayName": "Email Headers", 
+            "objectName": "Email_Headers"
+        }
+    ], 
+    "description": "Search with Email header data.", 
+    "displayName": "Email Headers", 
+    "objectSummary": {
+        "Interface Implementations": 0, 
+        "Interfaces": 0, 
+        "Event-Based": 1, 
+        "Transaction-Based": 0, 
+        "Search-Based": 0
+    }
+}
