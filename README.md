@@ -8,6 +8,11 @@ You can help make IMAP Mailbox better by contributing: https://github.com/IMAPMa
 
 # Getting Started
 
+## Default settings note:
+
+Before enabiling the IMAP settings, be aware of the default settings used in imap.conf file.
+One of the default settings is to delete all email once read and indexed from your mailbox. This is default to speed up indexing. If all mail is left in the mailbox, the script has to read the mail headers over and over each time it connects to index and can greatly slow down the process.
+
 ## New Install
 
 This section is to install on a centralized splunk setup. Look further down for distributed splunk design instructions.
